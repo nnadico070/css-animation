@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin Animation</title>
+<style>
+    *{
+        background-color: black;
+    }
+.spiner{
+    background-color: orangered;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 25px solid white;
+    border: 30px dotted wheat;
+    border-top: 25px solid indigo;
+    border-bottom: 25px solid indigo;
+    animation: ani 2.5s linear infinite;
+}
+@keyframes ani {
+    to{
+        transform: rotate(360deg);
+    }
+}
+</style>
+
+<style>
+.spin{
+    background-color: brown;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 39px solid gold;
+    border-left: 40px white double;
+    border-right: 40px white double;
+    animation: by 0.9s linear infinite;
+}
+@keyframes by{
+to{
+    transform: rotate(180deg);
+}
+}
+
+</style>
+
+</head>
+<body>
+   <div class="spiner"></div> 
+   <div class="spin"></div>
+</body>
+</html>
